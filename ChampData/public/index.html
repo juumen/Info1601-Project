@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Champions Data</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <style>
 </style>
 
@@ -16,6 +14,7 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div>
+      <br><br><br><br><br>
       <button class="filter-buttons" onclick="showDataFromLOLAPI()">All</button>
       <button class="filter-buttons" onclick="filterByTag('Fighter')">Fighter</button>
       <button class="filter-buttons" onclick="filterByTag('Tank')">Tank</button>
@@ -25,26 +24,24 @@
       <button class="filter-buttons" onclick="filterByTag('Support')">Support</button>
     </div>
   </div>
+
+  <div class="header">
+    <div class="logo">
+      <img src="Logo.png" alt="Logo">
+    </div>
+    
+  </div>
   <div id="main"> 
-
-
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Classes</span>
-
-
   </div>
   <section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <br><br><br><br><br><br>
+    
     <input type="text" id="searchInput" onkeyup="searchChampion()" placeholder="Search for champions...">
     <br>
     <button onclick="sortByDifficulty()">Sort by Difficulty Lowest to Highest</button>
     <br>
     <div class="dropdown">
-
       <button onclick="toggleDropdown()" class="dropbtn">All Difficulties</button>
       <div id="difficultyDropdown" class="dropdown-content">
         <!-- Dropdown options from 0 to 10 -->
@@ -59,14 +56,12 @@
         <a href="#" onclick="filterByDifficulty(8)">8</a>
         <a href="#" onclick="filterByDifficulty(9)">9</a>
         <a href="#" onclick="filterByDifficulty(10)">10</a>
-
         <a href="#" onclick="showDataFromLOLAPI()">All</a>
       </div>
     </div>
     <br><br><br><br>
     <div id="myModal" class="modal">
       <div class="modal-content" id="championModalContent">
-
       </div>
     </div>
     <br><br><br><br><br><br><br><br><br>
@@ -74,20 +69,15 @@
 
   <div id="result">
   </div>
- 
+  <footer>
+
     <footer>
-      <a href="#top"> Back to the top</a>
+      <a href="#top" style="color: white;"> Back to the top</a>
       <div class="footer-content">
         <p>&copy; 2024 SANK . All rights reserved.</p>
       </div>
     </footer>
-
-
-
-
     <script src="script.js"></script>
     <script src="modal.js"></script>
-
 </body>
-
 </html>
