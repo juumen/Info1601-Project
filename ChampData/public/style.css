@@ -1,6 +1,4 @@
 
-
-
 .modal {
   display: none;
   /* Hidden by default */
@@ -247,4 +245,19 @@ footer {
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.header{
+  background-color: #1f1f1f;
+ 
+  color: #fff;
+  padding: 1px;
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+}
+
+.logo img {
+  height: 100px; /* Adjust the height of the logo as needed */
+  width: auto;
 }
