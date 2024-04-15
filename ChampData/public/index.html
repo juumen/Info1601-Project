@@ -26,9 +26,10 @@
   </div>
 
   <div class="header">
-    <div class="logo">
-      <img src="Logo.png" alt="Logo">
+    <div class="logo" onclick="showDataFromLOLAPI()">
+        <img src="Logo.png" alt="Logo">
     </div>
+</div>
     
   </div>
   <div id="main"> 
@@ -42,6 +43,13 @@
     <br>
     <button onclick="sortByDifficulty()">Sort by Difficulty Lowest to Highest</button>
     <br>
+     <div id="buttonContainer">
+      <button onclick="showDataFromLOLAPI();">Show All</button>
+       <button onclick="sortByMagic()">Sort by Magic</button>
+       <button onclick="sortByAttack()">Sort by Attack</button>
+       <button onclick="sortByDefense()">Sort by Defense</button>
+   </div>
+    
     <div class="dropdown">
       <button onclick="toggleDropdown()" class="dropbtn">All Difficulties</button>
       <div id="difficultyDropdown" class="dropdown-content">
