@@ -133,5 +133,18 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.overflow = "auto"; // Enable scrolling on the body
 }
+function sortByMagic() {
+  const sortedChampions = Object.values(championsData).sort((a, b) => b.info.magic - a.info.magic);
+  drawChampionInfo(sortedChampions);
+}
 
+function sortByAttack() {
+  const sortedChampions = Object.values(championsData).sort((a, b) => b.info.attack - a.info.attack);
+  drawChampionInfo(sortedChampions);
+}
+
+function sortByDefense() {
+  const sortedChampions = Object.values(championsData).sort((a, b) => b.info.defense - a.info.defense);
+  drawChampionInfo(sortedChampions);
+}
 
